@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 175px;
+}
+@font-face {
+    font-family: Comforta;
+    src: url(./Fonts/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Yellowtail;
+    src: url(./Fonts/Yellowtail-Regular.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_text, .dest_h1, .tour_h2, .contact_head, .contact_data, .signin_head, .signup_head , .card-body h5, .places_head{
+    font-family: Yellowtail;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav_ul, .crt_acc, .home_text, .btn_home, .home_quote, .footer_list, .footer_btn, .footer_p1, .footer_p2, 
+.footer_news, .footer_input, .footer_btn2, .footer_p3, .dest_h3, .dest_p1, .dest_btn, .dest_p2, .pack_p, .pack_h3,
+.pack_col2, .tour_h4, .pro_h4, .pro_p, .pro_btn, .pro_h3, .pro_btn2, .pro_p2, .pro_p3, .contact_div, .contact_submit,
+.signin_cont, .signup_div, .card-body p{
+    font-family: Comforta;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.crt_acc{
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.bg_image{
+    position: relative;
 }
+.home_text{
+    position: absolute;
+    top: 45%;
+    /* left: 10%; */
+}
+.btn_home{
+    position: absolute;
+    top: 59%;
+    left: 4%;
+}
+.home_quote{
+    position: absolute;
+    top: 67%;
+    /* left: 10%; */
+}
+.footer_list{
+    list-style-type: none;
+    line-height: 30px;
+}
+.footer_col1{
+    display: flex;
+    flex-direction: row;
+}
+.footer_row, .pack_cont{
+    background-color: #eaede9;
+}
+.vl{
+    border-left: 4px solid black;
+    height: 210px;
+}
+.footer_col2{
+    display: flex;
+    flex-direction: column;
+}
+.footer_p2, .footer_p3{
+    line-height: 15px;
+}
+.dest_p1{
+    line-height: 18px;
+}
+.dest_p2{
+    text-decoration: underline;
+    line-height: 18px;
+}
+.pack_logo{
+    left: 31%;
+    top: 47%;
+}
+.pack_p{
+    left:31%;
+    top: 55%;
+    text-decoration: underline;
+}
+.pack_p2{
+    line-height: 18px;
+}
+.pack_btn{
+    background-color: #a0c0c6;
+    border-radius: 20px 20px 0px 0px;
+}
+.tour_pg{
+    position: relative;
+}
+.tour_shape{
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+}
+.tour_h2{
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+}
+.tour_h4{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+}
+.tour_heart{
+    position: absolute;
+    right: 25%;
+    bottom: 20%;
+}
+.pro_h3{
+    left: 6%;
+    top: 30%;
+}
+@media (max-width:780px) {
+    .header_sign{
+        position: absolute;
+        right:5%
+    }
+    .home_quote{
+        position: absolute;
+        top: 35%;
+        /* left: 10%; */
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .home_text{
+        position: absolute;
+        top: 25%;
+        /* left: 10%; */
+        font-size: 13px;
+        line-height: 12px;
+    }
+    .btn_home{
+        position: absolute;
+        top: 30%;
+        /* left: 4%; */
+        font-size: 8px;
+    }
+    .dest_img{
+        width: 350px;
+    }
+    .pack_logo{
+        width: 150px;
+        top: 32%;
+        left: 54%;
+    }
+    .pack_p{
+        font-size: 10px;
+        top: 37%;
+        left: 55%;
+    }
+    .tour_shape{
+        width: 300px;
+    }
+    .tour_h4{
+        font-size: 15px;
+    }
+    .tour_heart{
+        width: 30px;
+        right: 30%;
+    }
+    .pro_h3{
+        font-size: 12px;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
